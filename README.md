@@ -83,16 +83,16 @@ DevPilot retrieves the most relevant pieces of the indexed codebase and uses the
          │                  ┌──────────────────────┐
          │                  │     PostgreSQL       │
          │                  │                      │
-         │                  │  Application Data   │
-         │                  │  + pgvector         │
-         │                  │  Vector Embeddings  │
+         │                  │  Application Data    │
+         │                  │  + pgvector          │
+         │                  │  Vector Embeddings   │
          │                  └──────────┬───────────┘
          │                             │
          │                             ▼
          │                  ┌──────────────────────┐
          └─────────────────►│      AI Model        │
                             │    Spring AI         │
-                            │       + LLM           │
+                            │       + LLM          │
                             └──────────────────────┘
 ```
 
@@ -213,11 +213,9 @@ git --version
 # 📥 2. Clone the Repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/DevPilot.git
+git clone https://github.com/subhayughosha/DevPilot.git
 cd DevPilot
 ```
-
-> Replace `YOUR_USERNAME/DevPilot` with your actual GitHub repository URL.
 
 ---
 
