@@ -1,0 +1,149 @@
+<svg width="1280" height="640" viewBox="0 0 1280 640" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b0f19" />
+      <stop offset="50%" stop-color="#111827" />
+      <stop offset="100%" stop-color="#070a11" />
+    </linearGradient>
+
+    <!-- Accent Glow Gradient -->
+    <radialGradient id="glow-primary" cx="20%" cy="30%" r="60%">
+      <stop offset="0%" stop-color="#3b82f6" stop-opacity="0.25" />
+      <stop offset="100%" stop-color="#3b82f6" stop-opacity="0" />
+    </radialGradient>
+
+    <radialGradient id="glow-secondary" cx="80%" cy="70%" r="50%">
+      <stop offset="0%" stop-color="#8b5cf6" stop-opacity="0.2" />
+      <stop offset="100%" stop-color="#8b5cf6" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Title Gradient -->
+    <linearGradient id="title-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#60a5fa" />
+      <stop offset="50%" stop-color="#a78bfa" />
+      <stop offset="100%" stop-color="#f43f5e" />
+    </linearGradient>
+
+    <!-- Border Gradient -->
+    <linearGradient id="border-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3b82f6" stop-opacity="0.5" />
+      <stop offset="50%" stop-color="#8b5cf6" stop-opacity="0.2" />
+      <stop offset="100%" stop-color="#1e293b" stop-opacity="0.8" />
+    </linearGradient>
+  </defs>
+
+  <style>
+    .brand-title { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-weight: 800; font-size: 72px; letter-spacing: -1.5px; fill: url(#title-grad); }
+    .tagline { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-weight: 500; font-size: 26px; fill: #94a3b8; }
+    .badge-text { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-weight: 600; font-size: 15px; fill: #cbd5e1; }
+    .card-title { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; font-size: 14px; fill: #64748b; }
+    .code-text { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; font-size: 15px; fill: #38bdf8; }
+    .code-sub { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; font-size: 14px; fill: #94a3b8; }
+  </style>
+
+  <!-- Background Base -->
+  <rect width="1280" height="640" fill="url(#bg-grad)" />
+
+  <!-- Background Grid Pattern -->
+  <g opacity="0.07" stroke="#ffffff" stroke-width="1">
+    <path d="M 0,80 L 1280,80 M 0,160 L 1280,160 M 0,240 L 1280,240 M 0,320 L 1280,320 M 0,400 L 1280,400 M 0,480 L 1280,480 M 0,560 L 1280,560" />
+    <path d="M 160,0 L 160,640 M 320,0 L 320,640 M 480,0 L 480,640 M 640,0 L 640,640 M 800,0 L 800,640 M 960,0 L 960,640 M 1120,0 L 1120,640" />
+  </g>
+
+  <!-- Glow Elements -->
+  <rect width="1280" height="640" fill="url(#glow-primary)" />
+  <rect width="1280" height="640" fill="url(#glow-secondary)" />
+
+  <!-- Main Container Frame (Maintains >40px safe zone) -->
+  <rect x="50" y="50" width="1180" height="540" rx="24" fill="#0f172a" fill-opacity="0.4" stroke="url(#border-grad)" stroke-width="1.5" />
+
+  <!-- Left Side: Branding & Info -->
+  <!-- Logo Icon -->
+  <g transform="translate(100, 105)">
+    <rect width="64" height="64" rx="16" fill="#1e293b" stroke="#3b82f6" stroke-width="2" />
+    <path d="M 22 42 L 32 22 L 42 42 L 32 36 Z" fill="#60a5fa" />
+    <circle cx="32" cy="22" r="3" fill="#f43f5e" />
+  </g>
+
+  <!-- Project Name -->
+  <text x="180" y="155" class="brand-title">DevPilot</text>
+
+  <!-- Tagline -->
+  <text x="100" y="235" class="tagline">AI-Powered Repository Exploration &amp; RAG Assistant</text>
+
+  <!-- Description paragraph -->
+  <text x="100" y="280" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="18" fill="#64748b">
+    Index codebases, query architectural flows, and chat with verified source citations.
+  </text>
+
+  <!-- Feature / Tech Badges (Row 1) -->
+  <g transform="translate(100, 340)">
+    <!-- Badge 1 -->
+    <g transform="translate(0, 0)">
+      <rect width="130" height="38" rx="8" fill="#1e293b" stroke="#334155" />
+      <text x="65" y="24" text-anchor="middle" class="badge-text">⚡ Spring Boot</text>
+    </g>
+    <!-- Badge 2 -->
+    <g transform="translate(142, 0)">
+      <rect width="115" height="38" rx="8" fill="#1e293b" stroke="#334155" />
+      <text x="57" y="24" text-anchor="middle" class="badge-text">⚛️ Next.js 15</text>
+    </g>
+    <!-- Badge 3 -->
+    <g transform="translate(269, 0)">
+      <rect width="145" height="38" rx="8" fill="#1e293b" stroke="#334155" />
+      <text x="72" y="24" text-anchor="middle" class="badge-text">🐘 pgvector RAG</text>
+    </g>
+    <!-- Badge 4 -->
+    <g transform="translate(426, 0)">
+      <rect width="140" height="38" rx="8" fill="#1e293b" stroke="#334155" />
+      <text x="70" y="24" text-anchor="middle" class="badge-text">🔐 GitHub OAuth</text>
+    </g>
+  </g>
+
+  <!-- Right Side Mockup: Interactive Terminal / Chat Card -->
+  <g transform="translate(730, 110)">
+    <!-- Window Card -->
+    <rect width="450" height="420" rx="16" fill="#090d16" stroke="#334155" stroke-width="1.5" filter="drop-shadow(0 20px 25px rgba(0,0,0,0.5))" />
+
+    <!-- Window Top Header -->
+    <rect width="450" height="42" rx="16" fill="#131b2e" />
+    <rect y="30" width="450" height="12" fill="#131b2e" />
+    <circle cx="22" cy="21" r="5" fill="#ef4444" />
+    <circle cx="38" cy="21" r="5" fill="#f59e0b" />
+    <circle cx="54" cy="21" r="5" fill="#10b981" />
+    <text x="225" y="26" text-anchor="middle" class="card-title">devpilot-workspace • chat</text>
+
+    <!-- User Query Bubble -->
+    <g transform="translate(25, 65)">
+      <rect width="400" height="60" rx="10" fill="#1e293b" />
+      <text x="18" y="26" font-family="-apple-system, sans-serif" font-weight="600" font-size="13" fill="#94a3b8">USER</text>
+      <text x="18" y="47" font-family="-apple-system, sans-serif" font-size="14" fill="#f1f5f9">"How does repository chunking &amp; indexing work?"</text>
+    </g>
+
+    <!-- Assistant Response Card -->
+    <g transform="translate(25, 140)">
+      <rect width="400" height="240" rx="10" fill="#111c33" stroke="#2563eb" stroke-opacity="0.4" />
+      <text x="18" y="26" font-family="-apple-system, sans-serif" font-weight="600" font-size="13" fill="#60a5fa">DEVPILOT AI</text>
+
+      <text x="18" y="55" class="code-sub">Files are filtered by CodeFileFilter,</text>
+      <text x="18" y="77" class="code-sub">split with AST-aware line windows,</text>
+      <text x="18" y="99" class="code-sub">and embedded into PostgreSQL vectors.</text>
+
+      <!-- Citations Preview -->
+      <g transform="translate(18, 130)">
+        <rect width="180" height="30" rx="6" fill="#1e293b" stroke="#3b82f6" stroke-width="0.8" />
+        <text x="12" y="19" class="code-text" font-size="12">📄 CodeChunker.java:42</text>
+
+        <rect x="190" width="170" height="30" rx="6" fill="#1e293b" stroke="#3b82f6" stroke-width="0.8" />
+        <text x="202" y="19" class="code-text" font-size="12">📄 IndexingService.java:88</text>
+      </g>
+
+      <!-- Real-time Status -->
+      <g transform="translate(18, 185)">
+        <circle cx="6" cy="6" r="4" fill="#22c55e" />
+        <text x="18" y="10" font-family="-apple-system, sans-serif" font-size="12" fill="#22c55e">Indexed • 100% Context Match</text>
+      </g>
+    </g>
+  </g>
+</svg>
