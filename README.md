@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="./banner.svg" alt="DevPilot Banner" width="100%" />
+</p>
+
 # 🚀 DevPilot
 
 ### AI-Powered GitHub Repository Assistant
